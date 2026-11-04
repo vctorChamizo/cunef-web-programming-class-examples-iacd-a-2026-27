@@ -1,0 +1,4 @@
+{
+  "compilerOptions": { "baseUrl": ".", "paths": { "@/*": ["./src/*"] } },
+  "include": ["src", "01-react-basico", "02-componentes-ui", "03-hooks"]
+}

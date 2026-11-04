@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+/* Variables usadas por shadcn/ui. El diseño está preparado; el foco es React. */
+:root {
+  --radius: 0.75rem;
+  --background: #f7f8fa;
+  --foreground: #182333;
+  --card: #ffffff;
+  --card-foreground: #182333;
+  --popover: #ffffff;
+  --popover-foreground: #182333;
+  --primary: #244c85;
+  --primary-foreground: #ffffff;
+  --secondary: #e9eef5;
+  --secondary-foreground: #243f63;
+  --muted: #edf0f4;
+  --muted-foreground: #526174;
+  --accent: #e5edf8;
+  --accent-foreground: #193f73;
+  --destructive: #b42318;
+  --border: #d7dfe9;
+  --input: #c0ccdc;
+  --ring: #3b6eaf;
+}
+.dark {
+  --background: #131c2b;
+  --foreground: #edf2fb;
+  --card: #1d2a3d;
+  --card-foreground: #edf2fb;
+  --popover: #1d2a3d;
+  --popover-foreground: #edf2fb;
+  --primary: #a8c9ff;
+  --primary-foreground: #14243c;
+  --secondary: #30415a;
+  --secondary-foreground: #edf2fb;
+  --muted: #27374d;
+  --muted-foreground: #bac8dd;
+  --accent: #30415a;
+  --accent-foreground: #edf2fb;
+  --border: #41536d;
+  --input: #60738f;
+  --ring: #a8c9ff;
+}
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+@layer base {
+  * { @apply border-border; }
+  body { font-family: system-ui, sans-serif; margin: 0; }
+  button, input { font: inherit; }
+}
