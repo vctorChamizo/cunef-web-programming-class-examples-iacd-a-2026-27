@@ -12,7 +12,7 @@
 | Completar y reabrir | Cambian el estado, texto del botón y pendientes |
 | Activar Solo pendientes | Oculta las completadas; no las elimina |
 | Completar todas con filtro activo | Muestra «No hay tareas en esta vista» |
-| Eliminar todas | Lista vacía y título de pestaña «0 tareas · React» |
+| Eliminar todas | Lista vacía y título de pestaña con 0 tareas |
 | Añadir/eliminar en 03 | Actualiza el título de pestaña mediante useEffect |
 | Cambiar claro/oscuro | Cambian el tema y la variante de TaskStatus vía Context |
 | Dos llamadas con valor | Suma uno, intencionadamente, para explicar el render |

@@ -68,19 +68,20 @@ las funciones se aplican una tras otra sobre el resultado anterior.
 
 ### useEffect · slides 16–18
 
-Mirar el título de la pestaña. Añadir una tarea: pasa de «3 tareas» a «4 tareas».
-Eliminarla: vuelve a tres. El cambio externo ocurre en useEffect, no en el JSX.
-Las dependencias son [tasks], como en la slide 17.
+Mirar el título de la pestaña. Al escribir en el input aparece el texto y, al
+añadir o eliminar una tarea, cambia el número. El cambio externo ocurre en
+useEffect, no en el JSX. Las dependencias son [tasks, title], una ampliación
+del ejemplo de la slide 17 para observar dos valores.
 
-Cambiar solo el tema o pulsar el contador no cambia tasks. No se necesita un
+Cambiar solo el tema o pulsar el contador no cambia tasks ni title. No se necesita un
 efecto para calcular pending: ese número se deriva del array al renderizar.
 La función return del efecto restaura el título anterior antes de repetirlo
 y al desmontar. StrictMode puede ejecutar un ciclo adicional de setup/cleanup
 durante el desarrollo; no significa que haya dos tareas añadidas.
 
-Para la tabla de dependencias del deck: [] se asocia al montaje; [tasks] al
-montaje y cambios del array; omitir el segundo argumento repite tras cada render.
-Mantener [tasks] en el ejemplo final. No introducir llamadas HTTP todavía.
+Para la tabla de dependencias del deck: [] se asocia al montaje; [tasks, title]
+al montaje y cambios de cualquiera de esos valores; omitir el segundo argumento
+repite tras cada render. No introducir llamadas HTTP todavía.
 
 ### useContext · slides 19–21
 
