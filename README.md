@@ -22,3 +22,47 @@ Ejemplos progresivos empleados en las clases de Programación de Aplicaciones We
 | Arranque de P1 | Ejemplo funcional de la conexión entre interfaz de navegador y API Express. No es una plantilla entregable. | [`practicas/practica-1-starter/`](practicas/practica-1-starter/) |
 
 La progresión pasa del JavaScript ejecutado en el navegador a una API de tareas en Node.js y Express. Los recursos `tasks` y `users` se mantienen como hilo conductor del bloque II.
+
+## Arranque desde Orca
+
+Abrir una terminal en la raíz del repositorio y ejecutar el comando de la semana.
+`npm run` muestra todos los comandos disponibles. Estos comandos también funcionan
+fuera de Orca.
+
+| Semana | Comando | Dirección |
+|---|---|---|
+| 1–4 | `npm run start:01` a `npm run start:04` | http://127.0.0.1:8000 |
+| 5–8 | `npm run start:05` a `npm run start:08` | http://localhost:3000 |
+| 10 | `npm run start:10` | http://127.0.0.1:5173 |
+| 11 | `npm run start:11` | http://localhost:5173 |
+
+Los comandos requieren Node.js y npm. Para todos los ejemplos se puede utilizar
+Node.js 22.12 o posterior. Las semanas 1–4 requieren además Python 3.
+
+### Preparación inicial
+
+Para cada semana con dependencias, ejecutar una vez `npm run install:XX`,
+sustituyendo `XX` por `05`, `06`, `07`, `08`, `10` u `11`. Repetir la instalación
+si cambia el archivo de dependencias bloqueadas de esa semana.
+
+Configurar los archivos `.env` siguiendo el README de cada ejemplo.
+Las semanas 7 y 8 requieren PostgreSQL y la preparación de su base de datos,
+con los comandos de creación, migración y datos de ejemplo que documentan sus
+README. El comando de arranque presupone esa preparación completada.
+
+### Semana 11 con API
+
+1. Preparar la base de datos y el `.env` de semana 8 siguiendo su README.
+2. Ejecutar `npm run install:08` y `npm run start:08` en una terminal.
+3. Ejecutar `npm run install:11` y `npm run start:11` en otra terminal,
+   con el `.env` de semana 11 configurado.
+4. Abrir http://localhost:5173. El origen debe estar permitido por la
+   configuración CORS de la API.
+
+### Detener y cambiar de ejemplo
+
+Pulsar `Ctrl+C` en su terminal. Las semanas 1–4 comparten el puerto 8000,
+las APIs comparten el 3000 y los clientes React comparten el 5173. Detener
+el ejemplo anterior antes de arrancar otro que use el mismo puerto.
+Los comandos React fallan si el puerto está ocupado, para conservar la URL
+prevista y la configuración CORS.

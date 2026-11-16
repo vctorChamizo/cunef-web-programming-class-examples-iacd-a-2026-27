@@ -1,0 +1,23 @@
+{
+  "name": "cunef-web-programming-class-examples",
+  "private": true,
+  "description": "Comandos de arranque de los ejemplos de clase de G247.",
+  "scripts": {
+    "start:01": "python3 -m http.server 8000 --bind 127.0.0.1 --directory semana-01",
+    "start:02": "python3 -m http.server 8000 --bind 127.0.0.1 --directory semana-02",
+    "start:03": "python3 -m http.server 8000 --bind 127.0.0.1 --directory semana-03",
+    "start:04": "python3 -m http.server 8000 --bind 127.0.0.1 --directory semana-04",
+    "start:05": "npm --prefix semana-05 run dev",
+    "install:05": "npm --prefix semana-05 ci",
+    "start:06": "npm --prefix semana-06 run dev",
+    "install:06": "npm --prefix semana-06 ci",
+    "start:07": "npm --prefix semana-07 run dev",
+    "install:07": "npm --prefix semana-07 ci",
+    "start:08": "npm --prefix semana-08 run dev",
+    "install:08": "npm --prefix semana-08 ci",
+    "start:10": "npm --prefix semana-10 run dev -- --strictPort",
+    "install:10": "npm --prefix semana-10 ci",
+    "start:11": "npm --prefix semana-11 run dev -- --strictPort",
+    "install:11": "npm --prefix semana-11 ci"
+  }
+}
