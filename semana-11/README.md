@@ -6,6 +6,9 @@ React Router. Se utilizan componentes shadcn/ui ya preparados.
 
 Requisitos: Node 22.12 o posterior, PostgreSQL y la API de semana 8 configurada.
 
+Para preparar todo desde el principio, comprobar cada resultado y resolver los
+errores habituales, seguir [preparación del entorno](docs/02-ENTORNO.md).
+
 Desde la raíz del repositorio, en una primera terminal:
 
 ```text

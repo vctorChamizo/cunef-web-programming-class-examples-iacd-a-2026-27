@@ -41,7 +41,8 @@ enseña esta semana. La tarea recién creada se añade visualmente hasta recarga
 - Entrar con Ana e introducir el id de una tarea de Luis: 403.
 - Detener la API y abrir Tareas: mensaje de conexión y botón Reintentar.
   Volver a arrancarla y pulsar Reintentar.
-- Si el JWT caduca, cerrar sesión y hacer login de nuevo.
+- Si el JWT caduca, la API responde 401, se borra el token y se vuelve al login
+  con un mensaje. Tras iniciar sesión se recupera la ruta solicitada.
 
 ## 5. Relación con las slides
 
