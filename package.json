@@ -18,6 +18,8 @@
     "start:10": "npm --prefix semana-10 run dev -- --strictPort",
     "install:10": "npm --prefix semana-10 ci",
     "start:11": "npm --prefix semana-11 run dev -- --strictPort",
-    "install:11": "npm --prefix semana-11 ci"
+    "install:11": "npm --prefix semana-11 ci",
+    "start:12": "npm --prefix semana-12 run dev -- --strictPort",
+    "install:12": "npm --prefix semana-12 ci"
   }
 }

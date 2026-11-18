@@ -14,6 +14,7 @@ Ejemplos progresivos empleados en las clases de Programación de Aplicaciones We
 | 8 | JWT, autorización, contraseñas, CORS, validación y paginación | [`semana-08/`](semana-08/) |
 | 10 | React progresivo: fundamentos, shadcn/ui y hooks | [`semana-10/`](semana-10/) |
 | 11 | Axios, JWT, estados de petición y React Router | [`semana-11/`](semana-11/) |
+| 12 | Estado compartido y Context API | [`semana-12/`](semana-12/) |
 
 ## Prácticas
 
