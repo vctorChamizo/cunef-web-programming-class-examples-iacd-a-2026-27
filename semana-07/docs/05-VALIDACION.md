@@ -70,7 +70,7 @@ proceden de la documentación de esa imagen, no de una configuración personal.
 **Resultado: ambos jobs aprobados**, Node 22 y Node 24, sobre el commit
 `18d427569fc83913c15513b7d4ac96b01c35a6a3`. Pasaron la instalación con `npm ci`,
 creación de DB, migraciones, seed, diagnóstico, demostraciones y las 12 pruebas.
-La [ejecución de referencia](https://github.com/vctorChamizo/g247-labs-IACD-A-2026-27/actions/runs/39243258454)
+La [ejecución de referencia](https://github.com/vctorChamizo/cunef-web-programming-class-examples-iacd-a-2026-27/actions/runs/39243258454)
 conserva los logs de ambos jobs.
 
 El asistente gráfico y los permisos particulares de un portátil Windows siguen
