@@ -59,10 +59,13 @@ La pantalla de estado compartido usa datos locales. Las tareas de la API se
 persisten en PostgreSQL. El contexto agrupa la sesión, no todas las tareas.
 El flujo es un ejemplo docente y conserva el contrato de la semana anterior.
 
-La auditoría de npm indica una vulnerabilidad alta en picomatch, dependencia
-transitiva de las herramientas de desarrollo, y la propaga a cinco paquetes.
-En la comprobación realizada, `npm audit --omit=dev` no informa vulnerabilidades.
-La instalación nativa en Windows queda pendiente de verificar.
+La instalación nativa en Windows queda pendiente de verificar. `npm audit`
+no informó vulnerabilidades en la última comprobación realizada.
+
+Las semanas 11 y 12 comparten la sesión del navegador cuando se abren desde
+el mismo origen. Para comenzar la demostración sin sesión, pulsar «Cerrar sesión».
+El listado muestra la primera página de la API, hasta 20 tareas. Si hay más,
+una tarea creada aparecerá en pantalla, pero podría quedar fuera al recargar.
 
 Referencias: [estado compartido en React](https://react.dev/learn/sharing-state-between-components)
 y [Context](https://react.dev/learn/passing-data-deeply-with-context).

@@ -8,6 +8,9 @@ devuelve Navigate y la URL cambia a /login. Entrar con ana@example.com y
 AulaSegura8!. Aparecen las tareas propias. Recargar y comprobar que la sesión
 se recupera del localStorage.
 
+Si ya aparece «Cerrar sesión», pulsarlo antes de comenzar. Las semanas 11 y 12
+comparten localStorage cuando se abren desde el mismo origen del navegador.
+
 ## 2. Del formulario a PostgreSQL
 
 1. pages/Login.jsx recibe el formulario y llama a login con async/await.

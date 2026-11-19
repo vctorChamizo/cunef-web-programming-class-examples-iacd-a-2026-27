@@ -36,6 +36,7 @@ fuera de Orca.
 | 5–8 | `npm run start:05` a `npm run start:08` | http://localhost:3000 |
 | 10 | `npm run start:10` | http://127.0.0.1:5173 |
 | 11 | `npm run start:11` | http://localhost:5173 |
+| 12 | `npm run start:12` | http://localhost:5173 |
 
 Los comandos requieren Node.js y npm. Para todos los ejemplos se puede utilizar
 Node.js 22.12 o posterior. Las semanas 1–4 requieren además Python 3.
@@ -43,7 +44,7 @@ Node.js 22.12 o posterior. Las semanas 1–4 requieren además Python 3.
 ### Preparación inicial
 
 Para cada semana con dependencias, ejecutar una vez `npm run install:XX`,
-sustituyendo `XX` por `05`, `06`, `07`, `08`, `10` u `11`. Repetir la instalación
+sustituyendo `XX` por `05`, `06`, `07`, `08`, `10`, `11` o `12`. Repetir la instalación
 si cambia el archivo de dependencias bloqueadas de esa semana.
 
 Configurar los archivos `.env` siguiendo el README de cada ejemplo.
@@ -51,12 +52,13 @@ Las semanas 7 y 8 requieren PostgreSQL y la preparación de su base de datos,
 con los comandos de creación, migración y datos de ejemplo que documentan sus
 README. El comando de arranque presupone esa preparación completada.
 
-### Semana 11 con API
+### Semanas 11 y 12 con API
 
 1. Preparar la base de datos y el `.env` de semana 8 siguiendo su README.
 2. Ejecutar `npm run install:08` y `npm run start:08` en una terminal.
-3. Ejecutar `npm run install:11` y `npm run start:11` en otra terminal,
-   con el `.env` de semana 11 configurado.
+3. En otra terminal, ejecutar `npm run install:11` y `npm run start:11`, o
+   `npm run install:12` y `npm run start:12`, con el `.env` de la semana elegida
+   configurado. Solo puede ejecutarse uno de los dos clientes en el puerto 5173.
 4. Abrir http://localhost:5173. El origen debe estar permitido por la
    configuración CORS de la API.
 
