@@ -1,9 +1,14 @@
 import { z } from 'zod';
 
 // Una regla mínima para observar dónde se validan los datos recibidos.
+// Cada regla lleva su propio mensaje: sin él, Zod responde con su texto por defecto en inglés.
 export const itemSchema = z
   .object({
-    name: z.string().trim().min(1).max(80),
+    name: z
+      .string({ error: 'El nombre es obligatorio y debe ser un texto.' })
+      .trim()
+      .min(1, 'El nombre no puede estar vacío.')
+      .max(80, 'El nombre admite como máximo 80 caracteres.'),
   })
   .strip();
 
