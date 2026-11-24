@@ -1,1 +1,18 @@
-{"name":"practica-2-starter","private":true,"scripts":{"install:all":"npm ci --prefix api && npm ci --prefix client","dev":"concurrently -k -n API,CLIENT \"npm run dev:api\" \"npm run dev:web\"","dev:api":"npm run dev --prefix api","dev:web":"npm run dev --prefix client","db:setup":"npm run db:setup --prefix api"},"devDependencies":{"concurrently":"^9.2.1"},"engines":{"node":">=22.12.0"}}
+{
+  "name": "practica-2-starter",
+  "private": true,
+  "scripts": {
+    "install:all": "npm ci --prefix api && npm ci --prefix client",
+    "dev": "concurrently -k -n API,CLIENT \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "npm run dev --prefix api",
+    "dev:web": "npm run dev --prefix client",
+    "db:create": "npm run db:create --prefix api",
+    "db:setup": "npm run db:setup --prefix api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
