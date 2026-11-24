@@ -20,9 +20,9 @@ La progresión pasa del JavaScript ejecutado en el navegador a una API de tareas
 
 ## Prácticas
 
-| Material | Contenido | Carpeta |
+| Práctica | Contenido | Carpeta |
 |---|---|---|
-| Esqueleto de P1 | Estructura técnica de una aplicación cliente-servidor: página servida por Express que comprueba la conexión con `GET /health`. | [`practicas/practica-1-starter/`](practicas/practica-1-starter/) |
-| Arquitectura base de P2 | API Express con PostgreSQL y cliente React con Axios, `AuthContext` y ruta protegida en un mismo proyecto. | [`practicas/practica-2-starter/`](practicas/practica-2-starter/) |
+| 1 | Esqueleto cliente-servidor: página servida por Express que comprueba la conexión con `GET /health` | [`practicas/practica-1-starter/`](practicas/practica-1-starter/) |
+| 2 | Arquitectura base: API Express con PostgreSQL y cliente React con Axios, `AuthContext` y ruta protegida | [`practicas/practica-2-starter/`](practicas/practica-2-starter/) |
 
 Cada material se instala y se arranca desde su propia carpeta, siguiendo su README, que también indica qué incluye y qué queda fuera. Ninguno es una plantilla entregable ni la solución de la práctica: cada entrega debe cumplir el enunciado publicado.
