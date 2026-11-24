@@ -20,6 +20,9 @@
     "start:11": "npm --prefix semana-11 run dev -- --strictPort",
     "install:11": "npm --prefix semana-11 ci",
     "start:12": "npm --prefix semana-12 run dev -- --strictPort",
-    "install:12": "npm --prefix semana-12 ci"
+    "install:12": "npm --prefix semana-12 ci",
+    "install:p2": "npm --prefix practicas/practica-2-starter ci && npm --prefix practicas/practica-2-starter run install:all",
+    "db:p2": "npm --prefix practicas/practica-2-starter run db:create && npm --prefix practicas/practica-2-starter run db:setup",
+    "start:p2": "npm --prefix practicas/practica-2-starter run dev"
   }
 }

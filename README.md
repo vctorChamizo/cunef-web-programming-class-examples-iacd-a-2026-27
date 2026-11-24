@@ -21,6 +21,7 @@ Ejemplos progresivos empleados en las clases de Programación de Aplicaciones We
 | Material | Contenido | Carpeta |
 |---|---|---|
 | Arranque de P1 | Ejemplo funcional de la conexión entre interfaz de navegador y API Express. No es una plantilla entregable. | [`practicas/practica-1-starter/`](practicas/practica-1-starter/) |
+| Arquitectura base de P2 | Ejemplo de API Express con PostgreSQL y cliente React con Axios, `AuthContext` y ruta protegida en un mismo proyecto. Se instala y arranca desde su propia carpeta, según su README. No es una plantilla entregable. | [`practicas/practica-2-starter/`](practicas/practica-2-starter/) |
 
 La progresión pasa del JavaScript ejecutado en el navegador a una API de tareas en Node.js y Express. Los recursos `tasks` y `users` se mantienen como hilo conductor del bloque II.
 
@@ -37,6 +38,7 @@ fuera de Orca.
 | 10 | `npm run start:10` | http://127.0.0.1:5173 |
 | 11 | `npm run start:11` | http://localhost:5173 |
 | 12 | `npm run start:12` | http://localhost:5173 |
+| Arranque de P2 | `npm run start:p2` (API y cliente a la vez) | http://localhost:5173 · API en http://localhost:3000 |
 
 Los comandos requieren Node.js y npm. Para todos los ejemplos se puede utilizar
 Node.js 22.12 o posterior. Las semanas 1–4 requieren además Python 3.
@@ -61,6 +63,22 @@ README. El comando de arranque presupone esa preparación completada.
    configurado. Solo puede ejecutarse uno de los dos clientes en el puerto 5173.
 4. Abrir http://localhost:5173. El origen debe estar permitido por la
    configuración CORS de la API.
+
+### Arranque de P2
+
+El arranque de P2 contiene su propia API y su propio cliente, y no depende de
+semana 8. Requiere PostgreSQL en marcha.
+
+1. Copiar `api/.env.example` a `api/.env` y `client/.env.example` a
+   `client/.env` dentro de `practicas/practica-2-starter/`, y ajustar
+   `DATABASE_URL` como indica su README.
+2. Ejecutar una vez `npm run install:p2` para instalar las dependencias de la
+   carpeta, de `api/` y de `client/`.
+3. Ejecutar una vez `npm run db:p2`, que crea la base de datos `p2_starter`,
+   aplica la migración y añade los datos de ejemplo. Puede repetirse sin
+   duplicar datos.
+4. Ejecutar `npm run start:p2`. La API (puerto 3000) y el cliente (puerto 5173)
+   se arrancan en la misma terminal y se detienen juntos con `Ctrl+C`.
 
 ### Detener y cambiar de ejemplo
 
